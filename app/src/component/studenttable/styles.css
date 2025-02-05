@@ -1,0 +1,32 @@
+/* Container for the Search and Table */
+.container {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Table styling */
+.ant-table {
+  font-family: Arial, sans-serif;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #f0f2f5;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ant-table-tbody > tr > td {
+  text-align: center;
+}
+
+/* Row hover effect */
+.ant-table-tbody > tr:hover {
+  background-color: #f5f5f5;
+}
