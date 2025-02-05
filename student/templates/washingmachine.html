@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washing Machine Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .form-container {
+            width: 40%;
+            margin: 50px auto; 
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+            color: #333;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Washing Machine Booking</h2>
+        <form action="/washing" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="roll_number">Roll Number:</label>
+                <input type="text" id="roll_number" name="roll_number" placeholder="Enter your roll number" required>
+            </div>
+            <div class="form-group">
+                <label for="hostel">Hostel Name:</label>
+                <select id="hostel" name="hostel" required>
+                    <option value="Dheeran">Dheeran</option>
+                    <option value="Valluvar">Valluvar</option>
+                    <option value="Ponnar">Ponnar</option>
+                    <option value="Sankar">Sankar</option>
+                    <option value="Ilango">Ilango</option>
+                    <option value="Kamban">Kamban</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="room_number">Room Number:</label>
+                <input type="text" id="room_number" name="room_number" placeholder="Enter your room number" required>
+            </div>
+            <div class="form-group">
+                <label for="contact_number">Contact Number:</label>
+                <input type="tel" id="contact_number" name="contact_number" placeholder="Enter your contact number" required>
+            </div>
+            <div class="form-group">
+                <label for="time_slot">Preferred Time Slot:</label>
+                <select id="time_slot" name="time_slot" required>
+                    <option value="" disabled selected>Select a time slot</option>
+                    <option value="Morning (8 AM - 10 AM)">Morning (8 AM - 10 AM)</option>
+                    <option value="Afternoon (1 PM - 3 PM)">Afternoon (1 PM - 3 PM)</option>
+                    <option value="Evening (6 PM - 8 PM)">Evening (6 PM - 8 PM)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
